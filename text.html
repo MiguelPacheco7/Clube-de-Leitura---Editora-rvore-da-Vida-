@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clube de Leitura - Editora Árvore da Vida</title>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Declarando o peso Normal (usando o arquivo -Book) */
+        @font-face {
+          font-family: 'Galaxie Copernicus'; /* Nome que daremos à fonte */
+          src: url('./fonts/GalaxieCopernicus-Book.otf') format('opentype'); /* Caminho para o arquivo. ADICIONE A EXTENSÃO! */
+          font-weight: 400; /* 400 = normal */
+          font-style: normal;
+        }
+
+        /* Declarando o peso Negrito (Bold) */
+        @font-face {
+          font-family: 'Galaxie Copernicus';
+          src: url('./fonts/GalaxieCopernicus-Bold.otf') format('opentype'); /* Caminho para o arquivo. ADICIONE A EXTENSÃO! */
+          font-weight: 700; /* 700 = bold */
+          font-style: normal;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif; /* Usamos uma fonte padrão para parágrafos */
+            background-color: #FCFBF8;
+        }
+
+        /* Aplica a sua fonte Galaxie Copernicus APENAS nos títulos e no cabeçalho */
+        h1, h2, h3, h4, h5, h6,
+        header a {
+            font-family: 'Galaxie Copernicus', serif; /* 'serif' é uma fonte de segurança */
+        }
+        
+        /* O resto do seu CSS continua igual... */
+
+        .custom-green-bg { background-color: #63A85A; }
+        .custom-green-text { color: #53732F; }
+        .custom-dark-green-text { color: #005E2E; }
+        .custom-light-green-bg { background-color: #CCF03A; }
+        .custom-green-button {
+            background-color: #63A85A;
+            transition: background-color 0.3s;
+        }
+        .custom-green-button:hover {
+            background-color: #3E5624;
+        }
+        .custom-fake-button {
+            background-color: #63A85A;
+            border-color: white;
+        }
+        .border-custom-green-line {
+            border-color: #8FBC8F;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="px-10 py-3"> <!-- Reduzido py-6 para py-3 -->
+        <div class="flex justify-center items-center md:mt-3 space-x-20">
+            <!-- Placeholder para a logo. Substitua pela sua imagem real. -->
+            <img src="/assets/Logo/Logo EAV.png" alt="Logo Editora Árvore da Vida" class="h-12">
+            <a href="#" class="text-2xl custom-dark-green-text">Clube de Leitura</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="px-4 md:px-[75px] py-4 md:py-8 md:mb-24"> <!-- Adicionado py-4 md:py-8 para aproximar -->
+        <div class="flex flex-col-reverse md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left mt-8 md:mt-20 md:ml-14">
+                <h1>
+                    <p class="text-4xl md:text-5xl font-bold custom-dark-green-text leading-tight md:mb-1">Feito especialmente</p>
+                    <p class="text-4xl md:text-5xl font-bold custom-dark-green-text leading-tight md:mb-1">para cuidar de você</p>
+                    <p class="text-4xl md:text-5xl font-bold custom-dark-green-text leading-tight md:mb-1">e te aproximar da</p>
+                    <p class="text-4xl md:text-5xl font-bold custom-dark-green-text leading-tight md:mb-8">vontade de Deus.</p>
+                </h1>
+
+                <p class="custom-dark-green-text md:max-w-[470px] text-lg leading-tight md:mb-8">Desfrute de um livro novo todo mês, junto de outras mulheres no Clube de Leitura exclusivo que a Editora Árvore da Vida trouxe para você mulher.</p>
+                
+                <a href="#" class="custom-green-button text-white font-bold py-4 px-10 rounded-full text-lg md:text-xl inline-block min-w-[200px] md:min-w-[300px]">
+                    Faça sua assinatura
+                </a>
+            </div>
+            <div class="md:w-1/2 w-full">
+                <!-- Placeholder para a imagem Hero. Substitua pela sua imagem real. -->
+                <img src="/assets/Imagens/Hero right.png" alt="Hero Image" class="w-full object-cover md:pr-0 md:ml-auto md:mr-[-75px] rounded-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Leia em Grupo Section -->
+    <section class="py-5 px-4 sm:px-6 lg:px-8 md:mb-28">
+        <div class="container mx-auto">
+            <div class="text-center justify-center md:mb-36">
+                <h3 class="text-5xl font-bold custom-dark-green-text md:max-w-[730px] mx-auto leading-tight">
+                    Leia em grupo, um livro não é feito para ser lido sozinho.
+                </h3>
+                <p class="custom-dark-green-text md:mt-5 md:max-w-[500px] mx-auto leading-tight">
+                    Esteja em conjunto com outras mulheres, seja ajudada e suprida pela palavra de Deus, compartilhe a alegria que é ser amada, livros são para unir pessoas, isso que o Clube de Leitura faz.
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-20 md:px-10 md:ml-14">
+                <div class="md:w-[500px] md:ml-15">
+                    <img src="/assets/Imagens/Image.png" alt="Mulheres lendo em grupo" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:ml-28 md:w-1/2 md:mr-5">
+                    <h3 class="text-3xl font-bold custom-dark-green-text mb-4">O que é o Clube de Leitura?</h3>
+                    <div class="md:max-w-[400px]">
+                        <p class="custom-dark-green-text mb-4">Você já se sentiu cansada e precisando de receber um abraço? O Clube de Leitura é esse abraço!</p>
+                        <p class="custom-dark-green-text mb-16">Venha fazer parte de um Clube exclusivo, onde mulheres se unem para lerem juntas, 
+                            e conhecerem melhor a vontade de Deus para sua vida. As assinantes recebem a cada 3 meses um box especial em sua casa contendo os livros que serão lidos. 
+                            Elas também participam de um grupo especial no Whatsapp com outras assinantes onde são cuidadas. Além disso a cada 15 dias é feito de forma online uma leitura conjunta do livro.</p>
+                        <a href="#" class="custom-green-button text-white font-bold py-5 px-14 rounded-full text-xl md:min-w-[400px]">Faça parte do clube!</a>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section class="custom-green-bg py-20 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto text-center text-white">
+            <a class="inline-block px-6 py-2 border border-[#FFFDEB] rounded-full text-[#FFFDEB] text-3xl font-serif">Clube de Leitura</a>
+            <h2 class="text-4xl font-bold md:mt-16 md:mb-12">Como funciona o clube de leitura?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 px-4">
+                <!-- Card 1 -->
+                <div>
+                    <div class="custom-light-green-bg rounded-3xl shadow-lg w-[200px] h-[300px] flex items-center justify-center md:ml-8">
+                        <img src="/assets/Simbolos/Vector.png" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center mt-4">Faça sua assinatura</h3>
+                    <p class="text-center max-w-[220px] mx-auto">
+                        Escolha o plano que mais combina com você, informe seus dados direitinho e faça o pagamento.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div>
+                    <div class="custom-light-green-bg rounded-3xl shadow-lg w-[200px] h-[300px] flex items-center justify-center md:ml-8">
+                        <img src="/assets/Simbolos/Vector (1).png" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center mt-4">Receba o seu box especial</h3>
+                    <p class="text-center max-w-[220px] mx-auto">
+                        Receba no conforto da sua casa um box lindo e único, preparado especialmente para você, com os livros e presentes da Editora Árvore da Vida.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div>
+                    <div class="custom-light-green-bg rounded-3xl shadow-lg w-[200px] h-[300px] flex items-center justify-center md:ml-8">
+                        <img src="/assets/Simbolos/Vector (2).png" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center mt-4">Participe dos canais exclusivos</h3>
+                    <p class="text-center max-w-[220px] mx-auto">
+                        Entre no link que será enviado no seu e-mail e participe do grupo de Whatsapp, com outras assinantes.
+                    </p>
+                </div>
+                <!-- Card 4 -->
+                <div>
+                    <div class="custom-light-green-bg rounded-3xl shadow-lg w-[200px] h-[300px] flex items-center justify-center md:ml-8">
+                        <img src="/assets/Simbolos/Vector (3).png" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center mt-4">Participe dos encontros</h3>
+                    <p class="text-center max-w-[220px] mx-auto">
+                        Participe dos encontros quinzenais, leia em conjunto e seja cuidada junto com outras mulheres.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vantagens Section -->
+    <section class="bg-[#63A85A] pt-16 pb-24 px-4 sm:px-6 lg:px-8 text-white text-center">
+        <p class="text-sm font-semibold mb-2">Feito especialmente para você mulher.</p>
+        <h2 class="text-3xl font-bold mb-10">Vantagens do Clube de Leitura</h2>
+        <div class="flex flex-col md:flex-row items-start justify-center gap-8 mb-16 max-w-5xl mx-auto">
+            <!-- Primeiro parágrafo -->
+            <p class="text-white text-left text-lg flex-1 md:pr-8 md:border-r md:border-custom-green-line">
+                No Clube de Leitura da Editora Árvore da Vida, você terá um apoio emocional e espiritual, poderá desenvolver vínculos com outras mulheres, potencializando o seu crescimento espiritual e um desenvolvimento pessoal com propósito.
+            </p>
+            <!-- Segundo parágrafo -->
+            <p class="text-white text-left text-lg flex-1 md:pl-8">
+                Um espaço seguro e acolhedor feito para que você se sinta confortável. Um Clube pensado para que você desenvolva sua fé, conheça mais da Palavra de Deus, junto de outras mulheres.
+            </p>
+        </div>
+        <div class="mb-32">
+            <a href="#" class="bg-[#CCF03A] text-[#3E5624] font-bold py-4 px-10 rounded-full text-lg md:text-xl inline-block min-w-[280px] md:min-w-[310px]">
+                Faça sua assinatura
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção com vídeo e divisão de cores -->
+    <section class="relative bg-[#FCFBF8] pb-24 px-4 sm:px-6 lg:px-8">
+        <!-- Parte verde atrás -->
+        <div class="absolute top-0 left-0 w-full h-[150px] md:h-[250px] bg-[#63A85A] z-0"></div>
+
+        <!-- Vídeo sobreposto -->
+        <div class="relative z-10 max-w-4xl mx-auto -mt-20 md:-mt-[125px] rounded-2xl overflow-hidden shadow-xl">
+            <div class="relative pb-[56.25%]">
+                <!-- Substitua 'SEU_VIDEO' pelo ID do seu vídeo do YouTube -->
+                <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/watch?v=hAx4Lql_-VI" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Texto abaixo -->
+        <div class="text-center mt-12 md:mt-20">
+            <h2 class="text-2xl md:text-3xl font-bold custom-dark-green-text mb-6">Você quer se desenvolver espiritualmente?</h2>
+            <a href="#" class="inline-block custom-green-button text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-[#6d8a4a] transition">
+                Faça parte do clube
+            </a>
+        </div>
+    </section>
+
+    <!-- Nova Seção de Newsletter e Footer Combinada -->
+    <footer class="bg-[#FCFBF8]">
+        <div class="container mx-auto max-w-6xl mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-14 md:gap-x-16">
+
+                <!-- Top-Left: Newsletter -->
+                <div class="col-span-1">
+                    <h2 class="text-2xl md:text-3xl font-bold custom-dark-green-text mb-6 md:max-w-[510px]">
+                        Inscreva-se em nossa newsletter e receba informações sobre nossos lançamentos!
+                    </h2>
+                    <form class="flex flex-col sm:flex-row gap-4">
+                        <input type="text" placeholder="Nome" class="flex-1 p-3 border border-green-950 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 custom-green-text placeholder-custom-green-text">
+                        <input type="email" placeholder="Email" class="flex-1 p-3 border border-green-950 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 custom-green-text placeholder-custom-green-text">
+                        <!-- O botão "Inscrever" não está visível na imagem, então foi removido aqui para replicar o layout. -->
+                    </form>
+                </div>
+
+                <!-- Top-Right: Redes Sociais -->
+                <div class="col-span-1 md:text-right">
+                    <h3 class="font-bold custom-dark-green-text mb-4 text-lg">Redes Sociais</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:custom-green-text text-base">Instagram</a></li>
+                        <li><a href="#" class="text-gray-600 hover:custom-green-text text-base">Youtube</a></li>
+                        <li><a href="#" class="text-gray-600 hover:custom-green-text text-base">Facebook</a></li>
+                        <li><a href="#" class="text-gray-600 hover:custom-green-text text-base">Substack</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bottom-Left: Editora Árvore da Vida -->
+                <div class="col-span-1 mt-8 md:mt-0">
+                    <div class="flex items-center mb-4">
+                        <img src="/assets/Logo/Logo EAV.png" alt="Logo Editora Árvore da Vida" class="h-15 mr-3">
+                    </div>
+                    <p class="text-gray-500 text-sm">Cuidando de você e te aproximando de Deus.</p>
+                </div>
+
+                <!-- Bottom-Right: Contato -->
+                <div class="col-span-1 mt-8 md:mt-0 md:text-right">
+                    <h3 class="font-bold custom-dark-green-text mb-4 text-lg">Contato</h3>
+                    <p class="text-gray-600 text-base">vendas@arvoredavida.org.br</p>
+                    <p class="text-gray-600 text-base">+55 (11) 3723-6000</p>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Call to Action Bar -->
+        <div class="bg-[#CCF03A] py-8 px-4 sm:px-6 lg:px-8 text-[#3E5624] text-center">
+            <p class="text-lg font-semibold">Não perca tempo, faça já a sua assinatura!</p>
+        </div>
+    </footer>
+    <script>
+        const lenis = new Lenis({
+            duration: 1.4, // Aumentado para uma rolagem mais lenta
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothTouch: true,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }   
+
+        requestAnimationFrame(raf);
+    </script>
+</body>
+</html>
