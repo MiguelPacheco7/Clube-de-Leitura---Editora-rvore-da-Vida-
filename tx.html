@@ -6,7 +6,6 @@
     <title>Clube de Leitura - Editora Árvore da Vida</title>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/png" href="/assets/Logo/Logo EAV 2.png">
     
     <style>
         /* Estilos da fonte e cores permanecem os mesmos */
@@ -22,11 +21,6 @@
           src: url('./fonts/GalaxieCopernicus-Bold.otf') format('opentype');
           font-weight: 700;
           font-style: normal;
-        }
-
-        html, body {
-            margin: 0;
-            padding: 0;
         }
 
         body {
@@ -65,7 +59,7 @@
     <div class="overflow-x-hidden">
 
         <header class="px-6 py-4">
-            <div class="md:mt-2 flex justify-center items-center space-x-5 md:space-x-20">
+            <div class="flex justify-center items-center space-x-4 md:space-x-20">
                 <a href="index.html" >
                     <img src="/assets/Logo/Logo EAV.png" alt="Logo Editora Árvore da Vida" class="h-10 md:h-12">
                 </a>
@@ -73,10 +67,10 @@
             </div>
         </header>
 
-        <section class="md:px-[75px] py-8 md:py-12 mb-16 md:mb-24">
+        <section class="px-6 md:px-[75px] py-8 md:py-12 mb-16 md:mb-24">
             <div class="flex flex-col-reverse md:flex-row items-center justify-between">
-                <div class="px-6 md:w-1/2 text-center md:text-left mt-8 md:mt-0 md:ml-14">
-                    <h1 class="font-bold custom-dark-green-text leading-tight mb-6">
+                <div class="md:w-1/2 text-center md:text-left mt-8 md:mt-0 md:ml-14">
+                    <h1 class="font-bold custom-dark-green-text mb-6 leading-tight md:leading-relaxed">
                         <span class="text-3xl md:text-5xl">Feito especialmente</span><br>
                         <span class="text-3xl md:text-5xl">para cuidar de você</span><br>
                         <span class="text-3xl md:text-5xl">e te aproximar da</span><br>
@@ -87,7 +81,7 @@
                         Faça sua assinatura
                     </a>
                 </div>
-                <div class="ml-7 md:w-1/2 w-full">
+                <div class="md:w-1/2 w-full">
                     <img src="/assets/Imagens/Hero right.png" alt="Hero Image" class="w-full object-cover md:pr-0 md:ml-auto md:mr-[-75px] rounded-lg">
                 </div>
             </div>
@@ -159,13 +153,14 @@
                 </div>
             </div>
         </section>
-        
+
+
         <section class="relative bg-[#FCFBF8] pb-20 md:pb-24 px-6 lg:px-8">
-            <div class="absolute top-0 left-0 w-full h-[100px] md:h-[290px] bg-[#63A85A] z-0" style="margin-top: -1px;"></div>
+            <div class="absolute top-0 left-0 w-full h-[140px] md:h-[290px] bg-[#63A85A] z-0"></div>
             
-            <div class="relative z-10 max-w-4xl mx-auto -mt-16 md:-mt-[125px] rounded-2xl overflow-hidden shadow-xl">
-                <div class="relative pb-[56.25%] overflow-hidden" id="video-container"> <iframe class="absolute inset-0 w-full h-full bg-black" src="https://www.youtube.com/embed/hAx4Lql_-VI?si=cNqMRrxKWLWogEp5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <div class="absolute inset-0 cursor-pointer z-20" id="video-overlay"></div> 
+            <div class="relative z-10 max-w-4xl mx-auto -mt-12 md:-mt-[125px] rounded-2xl overflow-hidden shadow-xl">
+                <div class="relative pb-[56.25%]">
+                    <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/watch?v=hAx4Lql_-VI" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -224,26 +219,6 @@
         }   
 
         requestAnimationFrame(raf);
-
-        // NOVO CÓDIGO AQUI para o vídeo
-        document.addEventListener('DOMContentLoaded', function() {
-            const videoOverlay = document.getElementById('video-overlay');
-            // Obtém o iframe que está logo antes do overlay
-            const videoIframe = videoOverlay ? videoOverlay.previousElementSibling : null; 
-
-            if (videoOverlay && videoIframe && videoIframe.tagName === 'IFRAME') {
-                videoOverlay.addEventListener('click', function() {
-                    videoIframe.style.pointerEvents = 'auto'; // Torna o iframe clicável
-                    videoOverlay.style.display = 'none'; // Esconde a sobreposição
-                    // Opcional: Para auto-play ao clicar (se o URL do YouTube permitir)
-                    // if (!videoIframe.src.includes('autoplay')) {
-                    //     videoIframe.src += '&autoplay=1'; 
-                    // }
-                });
-            }
-        });
     </script>
 </body>
 </html>
-<!--Miguel A. Pacheco - Optimum co.
-GitHub - MiguelPacheco7-->
