@@ -3,3 +3,76 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css" layer(utilities);
+
+/* Estilos da fonte e cores */
+@font-face {
+    font-family: 'Galaxie Copernicus';
+    src: url('./fonts/GalaxieCopernicus-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galaxie Copernicus';
+    src: url('./fonts/GalaxieCopernicus-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FCFBF8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header a {
+    font-family: 'Galaxie Copernicus', serif;
+}
+
+.custom-green-bg {
+    background-color: #63A85A;
+}
+
+.custom-green-text {
+    color: #53732F;
+}
+
+.custom-dark-green-text {
+    color: #005E2E;
+}
+
+.custom-light-green-bg {
+    background-color: #CCF03A;
+}
+
+.custom-green-button {
+    background-color: #63A85A;
+    transition: background-color 0.3s;
+}
+
+.custom-green-button:hover {
+    background-color: #005E2E;
+}
+
+.border-custom-green-line {
+    border-color: #8FBC8F;
+}
+
+/* Utilitário para garantir altura igual nos cards */
+.card-plan {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
