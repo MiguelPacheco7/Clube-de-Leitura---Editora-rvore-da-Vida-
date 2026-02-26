@@ -8,78 +8,8 @@
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="/assets/Logo/Logo EAV 2.png">
-
-    <style>
-        /* Estilos da fonte e cores permanecem os mesmos */
-        @font-face {
-            font-family: 'Galaxie Copernicus';
-            src: url('./fonts/GalaxieCopernicus-Book.otf') format('opentype');
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Galaxie Copernicus';
-            src: url('./fonts/GalaxieCopernicus-Bold.otf') format('opentype');
-            font-weight: 700;
-            font-style: normal;
-        }
-
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #FCFBF8;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        header a {
-            font-family: 'Galaxie Copernicus', serif;
-        }
-
-        .custom-green-bg {
-            background-color: #63A85A;
-        }
-
-        .custom-green-text {
-            color: #53732F;
-        }
-
-        .custom-dark-green-text {
-            color: #005E2E;
-        }
-
-        .custom-light-green-bg {
-            background-color: #CCF03A;
-        }
-
-        .custom-green-button {
-            background-color: #63A85A;
-            transition: background-color 0.3s;
-        }
-
-        .custom-green-button:hover {
-            background-color: #005E2E;
-        }
-
-        .custom-fake-button {
-            background-color: #63A85A;
-            border-color: white;
-        }
-
-        .border-custom-green-line {
-            border-color: #8FBC8F;
-        }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body class="antialiased">
@@ -107,7 +37,7 @@
                     <p class="custom-dark-green-text max-w-md mx-auto md:mx-0 text-base leading-tight mb-8">Desfrute de
                         um livro novo a cada mês do ano, junto a outras mulheres, no Clube de Leitura exclusivo que a
                         Editora Árvore da Vida preparou especialmente para você, mulher!</p>
-                    <a href="#"
+                    <a href="#planos"
                         class="custom-green-button text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-full text-base md:text-xl inline-block">
                         Faça sua assinatura
                     </a>
@@ -140,7 +70,7 @@
                     <div class="text-center md:text-left md:ml-28 md:w-1/2 md:mr-5">
                         <h3 class="text-2xl md:text-3xl font-bold custom-dark-green-text mb-4">O que é o Clube de
                             Leitura?</h3>
-                        <div class="max-w-md mx-auto md:mx-0 md:max-w-[400px]">
+                        <div class="max-w-md mx-auto md:mx-0 md:max-w-[450px]">
                             <p class="custom-dark-green-text mb-4 text-base">Você já se sentiu cansada espiritualmente e
                                 precisando de um abraço?</p>
                             <p class="custom-dark-green-text mb-10 md:mb-16 text-base">O Clube de Leitura foi criado
@@ -150,8 +80,9 @@
                                 disso, elas podem participar de um grupo no WhatsApp com outras assinantes, para
                                 conversarem sobre os livros e serem cuidadas uma pela outra. Além disso, a cada 15 dias,
                                 é feita, de forma online, uma leitura conjunta do livro.</p>
-                            <a href="#"
-                                class="custom-green-button text-white font-bold py-4 px-10 rounded-full text-lg md:text-xl inline-block text-center">
+                            <!-- CORREÇÃO APLICADA NO BOTÃO ABAIXO -->
+                            <a href="#planos"
+                                class="custom-green-button text-white font-bold py-4 px-10 rounded-full text-lg md:text-xl inline-block text-center hover:shadow-lg transform transition hover:-translate-y-1">
                                 Faça parte desse Clube
                             </a>
                         </div>
@@ -224,18 +155,19 @@
                         você desenvolva sua fé e conheça mais da Palavra de Deus junto de outras mulheres.</p>
                 </div>
                 <div class="mb-16 md:mb-32">
-                    <a href="#"
-                        class="bg-[#CCF03A] text-[#005E2E] font-bold py-4 px-10 rounded-full text-lg md:text-xl inline-block w-full sm:w-auto">FAÇA
+                    <a href="#planos"
+                        class="bg-[#CCF03A] text-[#005E2E] font-bold py-4 px-10 rounded-full text-lg md:text-xl inline-block w-full sm:w-auto hover:bg-white transition duration-300">FAÇA
                         SUA ASSINATURA</a>
                 </div>
             </div>
         </section>
 
-        <section class="relative bg-[#FCFBF8] pb-20 md:pb-24 px-6 lg:px-8">
+        <section class="relative bg-[#FCFBF8] pb-10 px-6 lg:px-8">
             <div class="absolute top-0 left-0 w-full h-[100px] md:h-[290px] bg-[#63A85A] z-0" style="margin-top: -1px;">
             </div>
 
-            <div class="relative z-10 max-w-4xl mx-auto -mt-16 md:-mt-[125px] rounded-2xl overflow-hidden shadow-xl">
+            <div
+                class="relative z-10 max-w-4xl mx-auto -mt-16 md:-mt-[125px] rounded-2xl overflow-hidden shadow-xl mb-12">
                 <div class="relative pb-[56.25%] overflow-hidden" id="video-container"> <iframe
                         class="absolute inset-0 w-full h-full bg-black"
                         src="https://www.youtube.com/embed/QQ7ymGwfnWs?si=c7EMc6w_p0lmes_n" title="YouTube video player"
@@ -245,93 +177,301 @@
                     <div class="absolute inset-0 cursor-pointer z-20" id="video-overlay"></div>
                 </div>
             </div>
+        </section>
 
-            <div class="text-center mt-12 md:mt-20">
-                <h2 class="text-2xl md:text-3xl font-bold custom-dark-green-text mb-6">Você quer se desenvolver
-                    espiritualmente?</h2>
-                <a href="#"
-                    class="inline-block custom-green-button text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-[#005E2E] transition">Faça
-                    parte do clube</a>
+        <!-- NOVA SEÇÃO: PLANOS E PREÇOS -->
+         
+        <section id="planos" class="py-16 px-4 lg:px-8 bg-[#FCFBF8]">
+            <div class="container mx-auto max-w-[1300px]">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold custom-dark-green-text mb-6">Você quer se desenvolver
+                        espiritualmente?</h2>
+                    <p class="text-lg text-gray-600">Escolha o plano ideal para sua jornada</p>
+                </div>
+
+                <div class="md:flex gap-6">
+                    <!-- Plano A -->
+                    <div
+                        class="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-shadow border border-green-100 p-8 card-plan flex flex-col relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-2 custom-green-bg"></div>
+                        <h3 class="text-2xl font-bold custom-dark-green-text mb-2">Plano Trimestral</h3>
+                        <p class="text-sm text-gray-500 mb-6 font-semibold">Plano A</p>
+
+                        <ul class="space-y-3 mb-8 flex-1">
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> 6 meses de participação
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> 2 caixas exclusivas - 6 livros
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> 2 Brindes exclusivos
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Grupo do Whatsapp
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Encontros online quinzenais
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Pagamento recorrente (sem travar
+                                limite)
+                            </li>
+                        </ul>
+
+                        <div class="mt-auto pt-4 border-t border-gray-100">
+                            <p class="text-gray-500 text-sm mb-1">Preço:</p>
+                            <p class="text-3xl font-bold custom-dark-green-text mb-6">R$ --,--</p>
+                        </div>
+                    </div>
+
+                    <!-- Plano B -->
+                    <div
+                        class="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-shadow border border-green-100 p-8 card-plan flex flex-col relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-2 custom-green-bg"></div>
+                        <h3 class="text-2xl font-bold custom-dark-green-text mb-2">Plano Semestral</h3>
+                        <p class="text-sm text-gray-500 mb-6 font-semibold">Plano B</p>
+
+                        <ul class="space-y-3 mb-8 flex-1">
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> 6 meses de participação
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> 2 caixas exclusivas - 6 livros
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> 2 Brindes exclusivos
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Grupo do Whatsapp
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Encontros online quinzenais
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Pagamento recorrente
+                            </li>
+                        </ul>
+
+                        <div class="mt-auto pt-4 border-t border-gray-100">
+                            <p class="text-gray-500 text-sm mb-1">Preço:</p>
+                            <p class="text-3xl font-bold custom-dark-green-text mb-6">R$ --,--</p>
+                        </div>
+                    </div>
+
+                    <!-- Plano C -->
+                    <div
+                        class="bg-[#F0FDF4] rounded-3xl shadow-lg hover:shadow-xl transition-shadow border border-[#63A85A] p-8 card-plan flex flex-col relative overflow-hidden transform md:-translate-y-4">
+                        <div class="absolute top-0 left-0 w-full h-4 custom-green-bg"></div>
+                        <div
+                            class="absolute top-4 right-4 bg-[#CCF03A] text-[#005E2E] text-xs font-bold px-3 py-1 rounded-full">
+                            POPULAR</div>
+                        <h3 class="text-2xl font-bold custom-dark-green-text mb-2">Plano Anual</h3>
+                        <p class="text-sm text-gray-500 mb-6 font-semibold">Plano C</p>
+
+                        <ul class="space-y-3 mb-8 flex-1">
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> 12 meses de participação
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> 4 caixas exclusivas - 12 livros
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> 4 Brindes exclusivos
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Grupo do Whatsapp
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Encontros online quinzenais
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Pagamento recorrente
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700 font-bold">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Descontos exclusivos no site
+                            </li>
+                        </ul>
+
+                        <div class="mt-auto pt-4 border-t border-green-200">
+                            <p class="text-gray-500 text-sm mb-1">Preço:</p>
+                            <p class="text-3xl font-bold custom-dark-green-text mb-6">R$ --,--</p>
+                        </div>
+                    </div>
+
+                    <!-- Plano D -->
+                    <div
+                        class="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-shadow border border-green-100 p-8 card-plan flex flex-col relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-[#CCF03A]"></div>
+                        <h3 class="text-2xl font-bold custom-dark-green-text mb-2">Anual 100+</h3>
+                        <p class="text-sm text-gray-500 mb-6 font-semibold">Plano D (100 primeiros)</p>
+
+                        <ul class="space-y-3 mb-8 flex-1">
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Tudo do Plano Anual
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700 font-bold ">
+                                <i class="text-[#53732F] fas fa-star mt-1 mr-2"></i> 1 Devocional “Dias mais sábios"
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700 font-bold">
+                                <i class="text-[#53732F] fas fa-tag mt-1 mr-2"></i> Desconto de X% no clube
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Descontos na Editora
+                            </li>
+                            <li class="flex items-start text-sm text-gray-700">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i> Pagamento recorrente
+                            </li>
+                        </ul>
+
+                        <div class="mt-auto pt-4 border-t border-gray-100">
+                            <p class="text-gray-500 text-sm mb-1">Preço (especial):</p>
+                            <p class="text-3xl font-bold custom-dark-green-text mb-6">R$ --,--</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12">
+            <div class="mx-auto">
+                <div class="text-center">
+                    <!-- TEXTO NEWSLETTER ATUALIZADO -->
+                    <h2 class="mx-auto text-2xl md:text-3xl font-bold custom-dark-green-text mb-7 md:max-w-[690px]">
+                        Inscreva-se em nossa newsletter, receba informações sobre nossos lançamentos e garanta X% de
+                        desconto no site da editora!
+                    </h2>
+                    <form class="gap-4 mb-5">
+                        <input type="text" placeholder="Nome"
+                            class="p-3 border border-green-950 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 custom-green-text placeholder-custom-green-text">
+                        <input type="email" placeholder="Email"
+                            class="p-3 border border-green-950 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 custom-green-text placeholder-custom-green-text">
+                    </form>
+                    <button type="submit"
+                        class="bg-[#005E2E] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#004d26] transition">Enviar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOVA SEÇÃO: FAQ -->
+        <section class="py-16 px-6 lg:px-8 bg-[#F8FAF7]">
+            <div class="container mx-auto max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold custom-dark-green-text mb-6">Está com alguma dúvida?</h2>
+                    <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Aperte o botão abaixo e fale com uma de
+                        nossas consultoras, ou confira se ela já não foi respondida abaixo</p>
+
+                    <a href="#"
+                        class="inline-flex items-center gap-2 custom-green-button text-white font-bold py-3 px-8 rounded-full text-lg hover:shadow-lg transition transform hover:-translate-y-1">
+                        <i class="fab fa-whatsapp text-2xl"></i> Falar com atendimento
+                    </a>
+                </div>
+
+                <div class="mt-16">
+                    <!-- Pergunta 1 -->
+                    <div class="bg-white rounded-2xl p-4 md:p-6 shadow-sm border border-green-50">
+                        <h4 class="text-xl font-bold custom-dark-green-text mb-3 flex items-center">
+                            <i class="fas fa-question-circle text-[#CCF03A] mr-3 text-2xl"></i> Qual é a frequência das
+                            entregas?
+                        </h4>
+                        <p class="text-gray-700 ml-0 md:ml-10">Você receberá um box, a cada 3 meses na sua casa,
+                            contendo 3 livros da editora.</p>
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <div class="bg-white rounded-2xl p-4 md:p-6 shadow-sm border border-green-50">
+                        <h4 class="text-xl font-bold custom-dark-green-text mb-3 flex items-center">
+                            <i class="fas fa-book-open text-[#CCF03A] mr-3 text-2xl"></i> Posso escolher os livros da
+                            minha Box?
+                        </h4>
+                        <p class="text-gray-700 ml-0 md:ml-10">Cada caixa é planejada para aproximar você de Deus,
+                            pensando no aprofundamento da Palavra do Senhor Jesus em sua vida. Assim, não há como
+                            modificar os títulos das coleções.</p>
+                    </div>
+
+                    <!-- Pergunta 3 -->
+                    <div class="bg-white rounded-2xl p-4 md:p-6 shadow-sm border border-green-50">
+                        <h4 class="text-xl font-bold custom-dark-green-text mb-3 flex items-center">
+                            <i class="fas fa-credit-card text-[#CCF03A] mr-3 text-2xl"></i> Quais são as formas de
+                            pagamento?
+                        </h4>
+                        <p class="text-gray-700 ml-0 md:ml-10">Você pode optar por cartão, PIX ou Boleto, somente no
+                            plano Anual (vale a pena!). No plano Trimestral, apenas cartão de crédito é aceito.</p>
+                    </div>
+
+                    <!-- Pergunta 4 -->
+                    <div class="bg-white rounded-2xl p-4 md:p-6 shadow-sm border border-green-50">
+                        <h4 class="text-xl font-bold custom-dark-green-text mb-3 flex items-center">
+                            <i class="fas fa-ban text-[#CCF03A] mr-3 text-2xl"></i> Como faço para cancelar minha
+                            assinatura?
+                        </h4>
+                        <p class="text-gray-700 ml-0 md:ml-10">É raro de isso acontecer, mas se for preciso cancelar a
+                            sua assinatura por arrependimento, é só entrar em contato com nossa equipe de atendimento
+                            (email) que iremos providenciar o reembolso do seu pagamento, após a devolução da Box.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <footer class="bg-[#FCFBF8]">
-            <div class="container mx-auto max-w-6xl px-6 py-12 md:py-24">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-14 md:gap-x-16">
-                    <div class="col-span-1 text-center md:text-left">
-                        <h2 class="text-2xl md:text-3xl font-bold custom-dark-green-text mb-6 md:max-w-[510px]">
-                            Inscreva-se em nossa newsletter e receba informações sobre nossos lançamentos!</h2>
-                        <form class="flex flex-col sm:flex-row gap-4">
-                            <input type="text" placeholder="Nome"
-                                class="flex-1 p-3 border border-green-950 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 custom-green-text placeholder-custom-green-text">
-                            <input type="email" placeholder="Email"
-                                class="flex-1 p-3 border border-green-950 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 custom-green-text placeholder-custom-green-text">
-                        </form>
-                    </div>
-                    <div class="col-span-1 text-center md:text-right">
+            <div class="container mx-auto max-w-6xl px-6 py-5 md:py-12">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-center md:items-start gap-12 md:gap-0 md:mb-4">
+
+                    <div class="flex flex-col items-center justify-center w-full md:w-1/3 order-1 md:order-2">
                         <h3 class="font-bold custom-dark-green-text mb-4 text-lg">Redes Sociais</h3>
-                        <ul class="space-y-2">
-                            <li><a href="https://www.instagram.com/editoraarvoredavida/"
-                                    class="text-gray-600 hover:custom-green-text text-base">Instagram</a></li>
-                            <li><a href="https://www.facebook.com/editoraarvoredavida/?locale=pt_BR"
-                                    class="text-gray-600 hover:custom-green-text text-base">Facebook</a></li>
-                            <li><a href="https://www.youtube.com/@Editoraarvoredavidaoficial"
-                                    class="text-gray-600 hover:custom-green-text text-base">Youtube</a></li>
-                            <li><a href="#" class="text-gray-600 hover:custom-green-text text-base">Substack</a></li>
+                        <ul class="flex justify-center items-center gap-8">
+                            <li>
+                                <a href="https://www.instagram.com/editoraarvoredavida/" target="_blank"
+                                    class="text-gray-600 hover:custom-green-text transition-colors duration-300">
+                                    <i class="fab fa-instagram text-2xl"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/editoraarvoredavida/?locale=pt_BR" target="_blank"
+                                    class="text-gray-600 hover:custom-green-text transition-colors duration-300">
+                                    <i class="fab fa-facebook-f text-2xl"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@Editoraarvoredavidaoficial" target="_blank"
+                                    class="text-gray-600 hover:custom-green-text transition-colors duration-300">
+                                    <i class="fab fa-youtube text-2xl"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"
+                                    class="text-gray-600 hover:custom-green-text transition-colors duration-300">
+                                    <i class="fas fa-bookmark text-2xl"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-span-1 mt-8 md:mt-0 flex flex-col items-center md:items-start">
-                        <img src="/assets/Logo/Logo EAV.png" alt="Logo Editora Árvore da Vida" class="h-12 mb-4">
-                        <p class="text-gray-500 text-sm text-center md:text-left">Cuidando de você e te aproximando de
-                            Deus.</p>
-                    </div>
-                    <div class="col-span-1 mt-8 md:mt-0 text-center md:text-right">
-                        <h3 class="font-bold custom-dark-green-text mb-4 text-lg">Contato</h3>
+
+                    <div
+                        class="flex flex-col items-center md:items-end text-center md:text-right w-full md:w-1/3 order-2 md:order-3">
+                        <h3 class="font-bold custom-dark-green-text mb-2 text-lg">Contato</h3>
                         <p class="text-gray-600 text-base">vendas@arvoredavida.org.br</p>
                         <p class="text-gray-600 text-base">+55 (11) 3723-6000</p>
                     </div>
+
+                    <div
+                        class="flex flex-col mb-7 md:mb-0 items-center md:items-start w-full md:w-1/3 order-3 md:order-1">
+                        <img src="/assets/Logo/Logo EAV.png" alt="Logo Editora Árvore da Vida" class="h-12 mb-4">
+                        <p class="text-gray-500 text-sm text-center md:text-left">
+                            Cuidando de você e te aproximando de Deus.
+                        </p>
+                    </div>
+
                 </div>
             </div>
             <div class="bg-[#CCF03A] py-6 md:py-8 px-4 sm:px-6 lg:px-8 text-[#3E5624] text-center">
-                <p class="text-base md:text-lg font-semibold">Não perca tempo, faça já a sua assinatura!</p>
+                <p class="text-base md:text-lg font-semibold uppercase">NÃO PERCA TEMPO, FAÇA AGORA MESMO A SUA
+                    ASSINATURA</p>
             </div>
         </footer>
-
     </div>
-    <script>
-        const lenis = new Lenis({
-            duration: 1.4,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            smoothTouch: true,
-        });
-
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-
-        requestAnimationFrame(raf);
-
-        // NOVO CÓDIGO AQUI para o vídeo
-        document.addEventListener('DOMContentLoaded', function () {
-            const videoOverlay = document.getElementById('video-overlay');
-            // Obtém o iframe que está logo antes do overlay
-            const videoIframe = videoOverlay ? videoOverlay.previousElementSibling : null;
-
-            if (videoOverlay && videoIframe && videoIframe.tagName === 'IFRAME') {
-                videoOverlay.addEventListener('click', function () {
-                    videoIframe.style.pointerEvents = 'auto'; // Torna o iframe clicável
-                    videoOverlay.style.display = 'none'; // Esconde a sobreposição
-                    // Opcional: Para auto-play ao clicar (se o URL do YouTube permitir)
-                    // if (!videoIframe.src.includes('autoplay')) {
-                    //     videoIframe.src += '&autoplay=1'; 
-                    // }
-                });
-            }
-        });
-    </script>
+    <script src="JS/main.js" defer></script>
 </body>
 
 </html>
-<!--Miguel A. Pacheco - Optimum co.
-GitHub - MiguelPacheco7-->
